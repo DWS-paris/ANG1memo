@@ -1,0 +1,56 @@
+[
+	{
+		"id": 0,
+		"title": "HTML, les fondamentaux", 
+		"cover": "img/skills/html.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1vWmav8YusujGN7idSOabeh51khli-hwZp1tOSQQxh0g/od6/public/values?alt=json"
+	},
+	{
+		"id": 1,
+		"title": "CSS, les fondamentaux", 
+		"cover": "img/skills/css.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1VdXfBis9BavgDonwK96zj_YUC_9o8JhLdqO65xQ-aXI/od6/public/values?alt=json"
+	},
+	{
+		"id": 2,
+		"title": "HTML et CSS avancés", 
+		"cover": "img/skills/html-css.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/16L74Wa-nghx1Z_IxL2MZpT3pindS2erixn-wS8I6s9g/od6/public/values?alt=json"
+	},
+	{
+		"id": 3,
+		"title": "CSS3, les effets avancés", 
+		"cover": "img/skills/css-anim.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1nYWXePQreinKwikmR2vksmhTnXhMOI5JtRlgR_msLho/od6/public/values?alt=json"
+	},
+	{
+		"id": 4,
+		"title": "JavaScript, les fondamentaux", 
+		"cover": "img/skills/js.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1fGyzgU495kwSVmHpa0nRmoSGVzoh60OyZPNL0dbd97U/od6/public/values?alt=json"
+	},
+	{
+		"id": 5,
+		"title": "JavaScript, les conditions", 
+		"cover": "img/skills/js-cond.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1w1Xxg5hdwAdkoMk_O6OGUQw7iQ3FG2VLz61fPVk6WPk/od6/public/values?alt=json"
+	},
+	{
+		"id": 6,
+		"title": "JavaScript, manipuler le DOM", 
+		"cover": "img/skills/js-dom.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1mba51bi8yxpT1EKEnNbpPquaSB7eDXAjpXOnMOfclU8/od6/public/values?alt=json"
+	},
+	{
+		"id": 7,
+		"title": "jQuery, les fondamentaux", 
+		"cover": "img/skills/jquery.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1RmtGI4YA7RvOXBd6vy38lk8SLoP5fy7LewMNHbYcuJY/od6/public/values?alt=json"
+	},
+	{
+		"id": 8,
+		"title": "jQuery, les animations", 
+		"cover": "img/skills/jquery-anim.svg", 
+		"flux": "https://spreadsheets.google.com/feeds/list/1RfPXD-n4AUkUQd5FrV3eTL0zaOzCtdwzMDy84L7utmw/od6/public/values?alt=json"
+	}
+]

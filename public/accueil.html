@@ -1,0 +1,16 @@
+<!-- 
+Création d'un loading
+La directive "ng-show" permet d'afficher une balise selon une variable
+-->
+<aside ng-show="loading">chargement...</aside>
+
+<!-- 
+La directive "ng-hide" permet de masquer une balise selon une variable
+-->
+<article ng-repeat="post in posts" ng-hide="loading" class="menuHome view" role="article" >
+
+	<!-- Pour la source des images utiliser ng-src à la place de src -->
+	<img ng-src="{{post.cover}}">
+	<a href="" class="accMenuBtn" ng-click="menuGoAway(post.id)" ><span ng-bind="post.title"></p></a>
+	
+</article>

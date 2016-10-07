@@ -1,0 +1,482 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	/*background-color: #363795;*/
+	font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+	color: grey;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1 span {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #00bacc;
+    display: inline-block;
+}
+
+h2 {
+    color: #363795;
+    font-size: 1.5rem;
+    margin: 1rem auto 2rem auto;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+Animations
+*/
+
+a, .toggleBox h3{
+	-webkit-transition: .1s linear all;
+	transition: .1s linear all;
+}
+
+
+/*
+Animation tuto
+*/
+.view.ng-enter, .mainContent.ng-leave {
+  -webkit-transition: .1s linear all;
+  transition: .1s linear all;
+}
+
+
+.view.ng-enter-stagger, .mainContent.ng-leave-stagger {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.view.ng-enter {
+  opacity:0;
+}
+
+.mainContent.ng-leave {
+  opacity:1;
+}
+
+.view.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.mainContent.ng-leave-active {
+  opacity:0;
+}
+
+
+
+/*
+Style main / loading
+*/
+
+main, header section {
+	padding: 1.5rem;
+}
+
+main {
+	margin: 6rem auto;
+}
+
+#loading {
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 100%;
+}
+
+/* FIN MAIN */
+
+/*
+Style header
+*/
+
+nav {
+    position: absolute;
+    top: 1.1rem;
+    right: 2rem;
+}
+
+#burgerBtn, #closeBurger {
+    color: #282863;
+    font-size: 3.5rem;
+    position: relative;
+    z-index: 2000;
+}
+
+
+#burgerBtn:hover {
+	color: #CA3726;
+}
+
+#closeBurger {
+	color: #CA3726;
+	display: none;
+}
+
+#closeBurger:hover {
+	color: white;
+}
+
+nav section p {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #CA3726;
+    margin: 2rem auto 1rem auto;
+}
+
+nav section {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 8rem 0 0 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    text-align: center;
+
+    display: none;
+}
+
+nav section li {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+nav section a {
+    color: #282863;
+    font-size: 1.7rem;
+}
+
+
+header {
+	position: fixed;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	width: 100%;
+    background-color: #363795;
+
+	display: none;
+}
+
+header section {
+    margin: auto;
+}
+
+
+#topHeader{
+	z-index: 1000;
+	position: relative;
+    background-color: #363795;
+
+}
+
+
+header img {
+	width: 3rem;
+	margin-right: 1rem;
+}
+
+header article {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.3rem;	
+}
+
+header article:last-of-type{
+	width: 80%;
+	padding-top: .2rem;
+}
+
+/* FIN HEADER */
+
+/*
+Page Accueil
+*/
+
+.redTitle{
+    color: #CA372B;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.menuHome {
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menuHome img {
+    background-color: #363795;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 6rem;
+    display: block;
+    margin: 2rem auto 0 auto;
+    border: 1rem double white;
+}
+
+.menuHome a {
+    color: #363795;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: block;
+    max-width: 12rem;
+    margin: -2rem auto 1rem auto;
+    line-height: 1em;
+    padding: .7rem 0;
+    border-top: .1rem dotted #363795;
+    border-bottom: .1rem dotted #363795;
+    background-color: white;
+    z-index: 100;
+    position: relative;
+}
+
+.menuHome a:hover{
+    color: #CA372B;
+}
+
+/* FIN ACCUEIL */
+
+/*
+Page tutos
+*/
+.contentToggle {
+	display: none;
+	margin: 2rem auto;
+}
+
+.toggleBox h3 {
+	margin-top: 1rem;
+	font-size: 1.1rem;
+	font-weight: 100;
+	background-color: #00bacc;
+	padding: 1rem;
+	color: white;
+}
+
+.toggleBox h3:hover{
+	background-color: #363795;
+	padding-left: 1.2rem;
+}
+
+
+.toggleBox h3:before {
+	font-family: FontAwesome;
+	content: "\f101";
+	margin-right: .5rem;
+	color: #CA372B;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #363795;
+    margin: 2rem auto 1rem auto;
+}
+
+pre {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1rem 2rem;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+}
+
+pre ~ a {
+    color: white;
+    background-color: #CA3726;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+pre ~ a:hover {
+	background-color: black;
+}
+
+/* FIN TUTO */
+
+/*
+Style footer
+*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem 2.5rem 1rem;
+    background-color: #363795;
+    z-index: 2000
+}
+
+footer h4 {
+	margin: 1rem auto
+}
+
+footer h4 a{
+	color: white;
+	font-weight: 800;
+}
+
+footer a {
+	color: white;
+	font-size: 1rem;
+}
+
+footer a:hover {
+	color: #CA372B;
+}
+
+footer ul {
+	display: none;
+	margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem 2.5rem;
+    margin: 0	-1.1rem;
+    background-color: black;
+}
+
+
+/*
+Media Queries
+*/
+@media screen and (min-width: 420px) {
+
+    .menuHome a {
+        max-width: 12rem;
+    }
+
+}
+
+
+@media screen and (min-width: 520px) {
+
+    .menuHome {
+        width: 33%;
+    }
+
+    .menuHome img {
+        width: 8rem;
+    }
+
+}
+
+
+@media screen and (min-width: 720px) {
+
+    /* WidthSite */
+    header section, main, footer h4, footer ul {
+        max-width: 70rem;
+    }
+
+    .menuHome img {
+        width: 10rem;
+    }
+
+}
+
+
+@media screen and (min-width: 920px) {
+
+    /* WidthSite */
+    header section, main, footer h4, footer ul {
+        max-width: 90rem;
+    }
+
+    .menuHome {
+        width: 25%;
+    }
+
+    .menuHome img {
+        width: 10rem;
+    }
+
+    main, header section {
+        padding: 1.5rem 0;
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

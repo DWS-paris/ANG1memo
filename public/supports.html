@@ -1,0 +1,22 @@
+<!-- 
+Création d'un loading
+La directive "ng-show" permet d'afficher une balise selon une variable
+-->
+<aside id="loading" ng-show="loading" role="aside" >chargement...</aside>
+
+<section role="section" >
+	<h2 ng-bind="title"></h2>
+</section>
+
+<section ng-repeat="post in posts" ng-hide="loading" id="contentMemo" class="toggleBox view" role="section" >
+
+	<h3 ng-bind="post.gsx$name.$t" data-slide-toggle-duration="" data-slide-toggle="" ></h3>
+
+	<article class="contentToggle" role="article" >
+		<p ng-bind="post.gsx$desc.$t"></p>
+		<h4>Exemple</h4>
+		<pre><code ng-bind="post.gsx$code.$t"></code></pre>
+		<a href="{{post.gsx$link.$t}}" target="_blank" ><i class="fa fa-external-link" aria-hidden="true"></i> Plus d'infos </a>
+	</article>
+	
+</section>
